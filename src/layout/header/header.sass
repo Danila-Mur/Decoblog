@@ -1,0 +1,98 @@
+.header
+  position: relative
+  z-index: 1
+  background-color: #212429
+
+  &::before
+    content: ''
+    position: absolute
+    z-index: -1
+    top: 0
+    right: 0
+    left: 0
+    height: 345px
+    background-color: #212429
+
+.header__inner
+  display: flex
+  justify-content: space-between
+
+.header__burger
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 20px
+  border-right: 1px solid #3c3c3c
+  border-left: 1px solid #3c3c3c
+  cursor: pointer
+
+.header__burger-item
+  position: relative
+  width: 20px
+  height: 2px
+  background-color: #fff
+
+  &::before,
+  &::after
+    content: ''
+    position: absolute
+    width: 100%
+    height: 2px
+    background-color: #fff
+
+  &::before
+    top: -6px
+  
+  &::after
+    top: 6px
+
+.header__logo
+  align-self: center
+
+.header__share
+  display: flex
+
+.header__share-item
+  border-right: 1px solid #3c3c3c
+  border-left: 1px solid #3c3c3c
+
+.header__share-link
+  display: block
+  padding: 20px
+  text-decoration: none
+
+.header__share-img--rss
+
+  &::before
+    content: "\ea9b"
+    font-family: 'FontAwesome'
+    color: white
+
+.header__share-img--twitter
+
+  &::before
+    content: "\ea96"
+    font-family: 'FontAwesome'
+    color: white
+
+.header__share-img--tumbler
+
+  &::before
+    content: "\eab9"
+    font-family: 'FontAwesome'
+    color: white
+
+.header__share-img--facebook
+
+  &::before
+    content: "\ea90"
+    font-family: 'FontAwesome'
+    color: white
+
+.header__share-img--search
+
+  &::before
+    content: "\e986"
+    font-family: 'FontAwesome'
+    color: white
