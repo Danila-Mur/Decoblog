@@ -2,6 +2,10 @@
   padding-top: 105px
   padding-bottom: 200px
 
+.grid__cards
+  width: 100%
+  height: auto
+
 .grid__card
   display: flex
   flex-direction: column
@@ -18,6 +22,16 @@
 .grid__card--four
   width: 360px
   background-color: #fff
+
+.grid__card--six
+  background-color: #212429
+
+.grid__card--ten
+  padding: 0
+
+.grid__card--eleven,
+.grid__card--fourteen
+  background-color: #212429
 
 .grid__card-img
   position: absolute
@@ -123,3 +137,22 @@
 
   &::before
     content: "\e901"
+
+.grid__card-account
+  color: #999999
+  font-size: 14px
+  line-height: 24px
+  text-transform: uppercase
+  letter-spacing: 1.4px
+  text-decoration: none
+
+.grid__card-sharing-link
+  color: #949597
+  font-size: 17px
+  font-weight: $font-weight-light
+  line-height: 1.6
+  letter-spacing: 1.7px
+  text-align: center
+
+.grid__card-circle
+  padding: 0 80px

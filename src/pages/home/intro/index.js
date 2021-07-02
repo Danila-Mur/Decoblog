@@ -27,15 +27,21 @@ const introSwiper = new Swiper('.intro__container', {
     delay: 5000,
   },
 });
-let activeSlide = document.querySelector('div.swiper-slide-active');
 let captions = document.querySelector('.swiper-caption');
-let caption = activeSlide.dataset.caption;
-captions.innerHTML = caption;
-let updateCaptions = function() {
-  if (activeSlide.hasAttribute('data-caption')) {
-    captions.innerHTML = caption;
-  }
-};
-introSwiper.on('slideChange', function() {
+introSwiper.on('transitionEnd', function() {
   updateCaptions();
 });
+introSwiper.init(
+  (captions.innerHTML = document.querySelector(
+    '.swiper-slide-active'
+  ).dataset.caption)
+);
+let updateCaptions = () => {
+  if (
+    document.querySelector('.swiper-slide-active').hasAttribute('data-caption')
+  ) {
+    captions.innerHTML = document.querySelector(
+      '.swiper-slide-active'
+    ).dataset.caption;
+  }
+};

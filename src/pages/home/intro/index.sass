@@ -11,7 +11,7 @@
 
 .intro__card
   min-height: 580px
-  padding: 219px 46px 209px 98px
+  padding: 228px 46px 209px 98px
   background-image: url('./intro-bg.png') 
   background-repeat: no-repeat
 
@@ -33,13 +33,22 @@
   letter-spacing: 5.6px
   text-transform: uppercase
 
-.swiper-pagination
+.swiper-navigation
   position: absolute
-  top: 254px
-  right: 80px
+  top: 0
+  right: 0
+  height: 100%
+  display: flex
+  align-items: center
+  min-height: 252px
+  padding-right: 40px
+  z-index: 10
+
+.swiper-pagination
   display: flex 
   justify-content: center
   flex-direction: column
+  padding-right: 25px
   z-index: 10
 
 .swiper-pagination-bullet
@@ -55,25 +64,18 @@
 	background-color: #999999
 
 .swiper-caption
-  position: absolute
-  top: 269px
-  right: -31px
+  padding: 20px 0
   color: #fff
   font-size: 14px
-  line-height: 1.7
+  line-height: 1
   letter-spacing: 2.4px
-  transform: rotate(-90deg)
+  writing-mode: vertical-rl
+  transform: rotate(180deg)
   text-transform: uppercase
   z-index: 10
 
 .swiper-button-prev
-  position: absolute
-  top: 156px
-  right: 46px
   z-index: 10
 
 .swiper-button-next
-  position: absolute
-  bottom: 164px
-  right: 46px
   z-index: 10
