@@ -23,9 +23,9 @@ const introSwiper = new Swiper('.intro__container', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  autoplay: {
-    delay: 5000,
-  },
+  // autoplay: {
+  //   delay: 5000,
+  // },
 });
 let captions = document.querySelector('.swiper-caption');
 introSwiper.on('transitionEnd', function() {

@@ -2,3 +2,161 @@
   flex-grow: 0
   flex-shrink: 0
   flex-basis: auto
+  background-color: #212429
+  padding-top: 59px
+  overflow: hidden
+
+.footer__content
+  display: flex
+  justify-content: space-between
+  padding-bottom: 62px
+
+.footer__about
+  max-width: 390px
+  margin-right: 30px
+
+.footer__title
+  display: block
+  margin-bottom: 39px
+  color: #f9f9fb
+  font-size: 16px
+  font-weight: $font-weight-bold
+  line-height: 1.75
+  text-transform: uppercase
+  letter-spacing: 0.96px
+
+.footer__about-text
+  margin-bottom: 11px
+  color: #f9f9fb
+  font-size: 15px
+  font-weight: $font-weight-light
+  line-height: 1.85
+  letter-spacing: 1.5px
+
+.footer__tweets
+  margin-right: 30px
+
+.footer__tweets-nickname
+  position: relative
+  display: block
+  margin-bottom: 19px
+  color: #f9f9fb
+  font-size: 14px
+  font-weight: $font-weight-light
+
+  &::before
+    content: "\ea96"
+    position: absolute
+    left: -20px
+    color: #f9f9fb
+    font-family: 'FontAwesome'
+
+.footer__tweets-text
+  max-width: 339px
+  margin-bottom: 36px
+  color: #ffffff
+  font-size: 14px
+  font-weight: $font-weight-light
+  line-height: 1.85
+  letter-spacing: 1.5px
+
+  &:last-child
+    margin-bottom: 0
+
+.footer__instagram
+  margin-right: 30px
+
+.footer__instagram-images
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  gap: 2px
+
+.footer__comment 
+  max-width: 363px
+
+.footer__comment-from
+  display: block
+  margin-bottom: 22px
+  color: #fff
+  font-family: "Open Sans"
+  font-size: 14px
+  font-weight: $font-weight-light
+  line-height: 1.7
+  letter-spacing: 1.4px
+
+.footer__comment-text
+  padding-bottom: 28px
+  margin-bottom: 29px
+  border-bottom: 1px solid #cccccc
+  color: #fff
+  font-family: "Open Sans"
+  font-size: 14px
+  font-weight: 300
+  line-height: 24px
+  letter-spacing: 1.4px
+
+  &:last-child
+    margin-bottom: 0
+    padding-bottom: 0
+    border: none
+
+.footer__bottom
+  display: flex
+  justify-content: center
+  padding: 15px 0
+  background-color: #17191c
+
+.footer__bottom-copyright
+  position: relative
+  padding-right: 17px
+  opacity: 0.4
+  color: #ffffff
+  font-size: 14px
+  font-weight: $font-weight-light
+  line-height: 24px
+  letter-spacing: 1.4px
+  text-transform: uppercase
+  text-decoration: none
+  
+  &::after
+    content: ""
+    position: absolute
+    top: 3px
+    right: 0
+    height: 60%
+    width: 2px
+    background-color: #fff
+
+.footer__bottom-policy
+  position: relative
+  padding-right: 17px
+  padding-left: 17px
+  opacity: 0.4
+  color: #ffffff
+  font-size: 14px
+  font-weight: $font-weight-light
+  line-height: 24px
+  letter-spacing: 1.4px
+  text-transform: uppercase
+  text-decoration: none
+  
+  &::after
+    content: ""
+    position: absolute
+    top: 3px
+    right: 0
+    height: 60%
+    width: 2px
+    background-color: #fff
+
+.footer__bottom-disclaimer
+  position: relative
+  padding-left: 17px
+  opacity: 0.4
+  color: #ffffff
+  font-size: 14px
+  font-weight: $font-weight-light
+  line-height: 24px
+  letter-spacing: 1.4px
+  text-transform: uppercase
+  text-decoration: none

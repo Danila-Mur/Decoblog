@@ -1,6 +1,12 @@
 .intro
   height: 580px
 
+  +max-w($laptop)
+    height: 480px
+
+  +max-w($laptop_sm)
+    height: 380px
+
 .intro__container
   position: relative
   height: 100%
@@ -8,12 +14,26 @@
 .swiper-slide
   height: 580px
   overflow: hidden
+  
+  +max-w($laptop)
+    height: 480px
+
+  +max-w($laptop_sm)
+    height: 380px
 
 .intro__card
   min-height: 580px
   padding: 228px 46px 209px 98px
   background-image: url('./intro-bg.png') 
   background-repeat: no-repeat
+  background-size: contain
+
+  +max-w($laptop)
+    min-height: 480px
+    padding: 173px 46px 209px 98px
+
+  +max-w($laptop_sm)
+    padding: 73px 46px 129px 48px
 
 .intro__subtitle
   display: block
@@ -43,6 +63,9 @@
   min-height: 252px
   padding-right: 40px
   z-index: 10
+
+  +max-w($laptop)
+    padding-right: 45px
 
 .swiper-pagination
   display: flex 

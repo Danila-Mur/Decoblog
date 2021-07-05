@@ -59,6 +59,11 @@
   &:last-child
     border-right: 1px solid #3c3c3c
 
+  +max-w($mobile)
+
+    &:not(:last-child)
+      display: none
+
 .header__share-link
   display: block
   padding: 15px 19px
