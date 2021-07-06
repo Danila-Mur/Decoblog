@@ -1,11 +1,20 @@
 .intro
   height: 580px
 
-  +max-w($laptop)
+  +max-w($laptop_md)
     height: 480px
 
   +max-w($laptop_sm)
     height: 380px
+
+  +max-w($mobile)
+    height: 280px
+
+  +max-w($mobile_md)
+    height: 180px
+
+  +max-w($mobile_sm)
+    height: 115px
 
 .intro__container
   position: relative
@@ -15,7 +24,7 @@
   height: 580px
   overflow: hidden
   
-  +max-w($laptop)
+  +max-w($laptop_md)
     height: 480px
 
   +max-w($laptop_sm)
@@ -28,12 +37,15 @@
   background-repeat: no-repeat
   background-size: contain
 
-  +max-w($laptop)
+  +max-w($laptop_md)
     min-height: 480px
     padding: 173px 46px 209px 98px
 
   +max-w($laptop_sm)
-    padding: 73px 46px 129px 48px
+    padding: 96px 46px 129px 48px
+
+  +max-w($mobile_md)
+    padding: 13px 26px 19px 78px
 
 .intro__subtitle
   display: block
@@ -44,6 +56,13 @@
   line-height: 1.35
   letter-spacing: 3.6px
 
+  +max-w($mobile)
+    margin-bottom: 10px
+    font-size: 15px
+
+  +max-w($mobile_md)
+    font-size: 10px
+
 .intro__title
   max-width: 480px
   color: #fff
@@ -52,6 +71,16 @@
   font-weight: $font-weight-bold
   letter-spacing: 5.6px
   text-transform: uppercase
+
+  +max-w($tablet)
+    font-size: 30px
+
+  +max-w($mobile)
+    max-width: 340px
+    font-size: 19px
+
+  +max-w($mobile_md)
+    font-size: 13px
 
 .swiper-navigation
   position: absolute
@@ -64,8 +93,11 @@
   padding-right: 40px
   z-index: 10
 
-  +max-w($laptop)
+  +max-w($laptop_md)
     padding-right: 45px
+
+  +max-w($mobile_md)
+    display: none
 
 .swiper-pagination
   display: flex 
@@ -97,8 +129,13 @@
   text-transform: uppercase
   z-index: 10
 
+  +max-w($tablet)
+    display: none
+
 .swiper-button-prev
   z-index: 10
+  cursor: pointer
 
 .swiper-button-next
   z-index: 10
+  cursor: pointer
