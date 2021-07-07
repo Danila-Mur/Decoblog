@@ -1,5 +1,8 @@
 # FRONTEND BOILERPLATE
 
+## Link
+https://danila-mur.github.io/Decoblog/
+
 ## Install
 ```sh
 $ git clone 
