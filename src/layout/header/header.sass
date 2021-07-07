@@ -68,6 +68,12 @@
   &:last-child
     border-right: 1px solid #3c3c3c
 
+  &:hover
+    background-color: #fff
+
+    .header__share-img::before
+      color: #212429
+
   +max-w($mobile)
 
     &:not(:last-child)
@@ -78,37 +84,33 @@
   padding: 15px 19px
   text-decoration: none
 
+.header__share-img 
+
+  &::before
+    font-family: 'FontAwesome'
+    color: white
+
 .header__share-img--rss
 
   &::before
     content: "\ea9b"
-    font-family: 'FontAwesome'
-    color: white
 
 .header__share-img--twitter
 
   &::before
     content: "\ea96"
-    font-family: 'FontAwesome'
-    color: white
 
 .header__share-img--tumbler
 
   &::before
     content: "\eab9"
-    font-family: 'FontAwesome'
-    color: white
 
 .header__share-img--facebook
 
   &::before
     content: "\ea90"
-    font-family: 'FontAwesome'
-    color: white
 
 .header__share-img--search
 
   &::before
     content: "\e986"
-    font-family: 'FontAwesome'
-    color: white

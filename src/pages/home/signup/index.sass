@@ -71,12 +71,18 @@
   padding: 14px 69px
   border: none
   color: #fff
-  background-color: #212121
+  box-shadow: 0 0 40px 40px #212121 inset, 0 0 0 0 #212121
   font-size: 14px
   line-height: 1.7
   font-weight: $font-weight-medium
   text-transform: uppercase
   letter-spacing: 1.6px
+  cursor: pointer
+  transition: all 150ms ease-in-out
+
+  &:hover
+    color: #212121
+    box-shadow: 0 0 10px 0 #212121 inset, 0 0 10px 4px #212121
 
   +max-w($laptop_lg)
     padding: 14px 54px

@@ -34,7 +34,7 @@ module.exports = ({ basedir, locals }) => {
                           if (match) {
                             const [_, _public, src] = match;
                             // eslint-disable-next-line no-underscore-dangle
-                            const prefix = _public ? loaderContext._compiler.options.output.publicPath : '';
+                            const prefix = _public ?  loaderContext._compiler.options.output.publicPath : '';
                             resolve(prefix + src);
                           } else {
                             reject(new Error('not found src'));

@@ -6,26 +6,23 @@ footer.footer
         p.footer__about-text 
           | Lorem ipsum dolor sit amet, conser adipisicing  
           | esse cillum dolore nulla pariatur. 
-        img.footer__about-img(src="images/footer-about.png", alt="Footer about")
+        img.footer__about-img(src=require("images/footer-about.png") alt="Footer about")
       .footer__tweets 
         span.footer__tweets-title.footer__title latest tweets
-        span.footer__tweets-nickname @Twitter@magicalrebekah
-        p.footer__tweets-text 
-          | Developer Advocate @heyval isaiyou knows the very well 
-          | is about things .
-        span.footer__tweets-nickname @Twitter@magicalrebekah
-        p.footer__tweets-text 
-          | Developer Advocate hav a great work this knows the very 
-          | well is about things .
+        dl.footer__tweets-list 
+          dt.footer__tweets-nickname @Twitter@magicalrebekah
+          dd.footer__tweets-text Developer Advocate @heyval isaiyou knows the very well is about things .
+          dt.footer__tweets-nickname @Twitter@magicalrebekah
+          dd.footer__tweets-text Developer Advocate @heyval isaiyou knows the very well is about things .
       .footer__instagram 
         span.footer__instagram-title.footer__title Follow me instagram
         .footer__instagram-images 
-          img.footer__instagram-img(src="images/footer-instagram.png", alt="Footer instagram")
-          img.footer__instagram-img(src="images/footer-instagram.png", alt="Footer instagram")
-          img.footer__instagram-img(src="images/footer-instagram.png", alt="Footer instagram")
-          img.footer__instagram-img(src="images/footer-instagram.png", alt="Footer instagram")
-          img.footer__instagram-img(src="images/footer-instagram.png", alt="Footer instagram")
-          img.footer__instagram-img(src="images/footer-instagram.png", alt="Footer instagram")
+          img.footer__instagram-img(src=require("images/footer-instagram.png") alt="Footer instagram")
+          img.footer__instagram-img(src=require("images/footer-instagram.png") alt="Footer instagram")
+          img.footer__instagram-img(src=require("images/footer-instagram.png") alt="Footer instagram")
+          img.footer__instagram-img(src=require("images/footer-instagram.png") alt="Footer instagram")
+          img.footer__instagram-img(src=require("images/footer-instagram.png") alt="Footer instagram")
+          img.footer__instagram-img(src=require("images/footer-instagram.png") alt="Footer instagram")
       .footer__comment 
         span.footer__comment-title.footer__title latest comment
         span.footer__comment-from From Alex :
