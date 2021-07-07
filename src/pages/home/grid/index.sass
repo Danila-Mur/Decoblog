@@ -4,7 +4,7 @@
 
 .grid__cards
   display: grid
-  gap: 30px 29px
+  grid-gap: 30px
   grid-template-columns: repeat(auto-fill, minmax(360px,1fr))
   grid-auto-rows: 20px
 
@@ -14,6 +14,12 @@
   background-color: #fff
   &:hover
     box-shadow: 0 3px 26px 4px rgba(112, 112, 112, 0.49)
+
+  +max-w($mobile_md)
+    width: 300px
+
+  +max-w(330)
+    margin: 0
 
 .grid__card-middle
   position: relative
